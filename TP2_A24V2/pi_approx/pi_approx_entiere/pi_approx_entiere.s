@@ -8,8 +8,6 @@ mov %esp,%ebp
 push %ebx
 
 # VOTRE CODE #
-<<<<<<< HEAD
-=======
 setup:
 movl $0, %esi # Sum
 movl 8(%ebp), %ecx # Iterations
@@ -52,7 +50,6 @@ shrink:
 shr $29, %esi
 end:
 movl %esi, %eax
->>>>>>> 5709fef54ced5f2382f3c6401d3d8da99db39279
 
 pop %ebx
 pop %ebp

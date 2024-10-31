@@ -27,8 +27,6 @@ mov %esp,%ebp
 push %ebx
 
 #votre code
-<<<<<<< HEAD
-=======
 setup:
 flds pi     #  au fond de la pile
 movl (iteration), %ecx
@@ -69,7 +67,6 @@ end:
 flds multiplicateur
 fmulp
 # fois 4
->>>>>>> 5709fef54ced5f2382f3c6401d3d8da99db39279
 
 pop %ebx
 pop %ebp
