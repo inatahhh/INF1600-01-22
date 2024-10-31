@@ -11,13 +11,9 @@ length2:
 .text
 .globl comparaison
 
-main : 
-comparaison : 
+main:
+comparaison:
+
 
 ret
 push %eax
-
-
-
-
-
