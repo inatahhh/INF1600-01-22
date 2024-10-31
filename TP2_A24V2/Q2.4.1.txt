@@ -1,0 +1,21 @@
+L'opérande qui permet d'appliquer cet algorithme est XOR. Un message de 
+N caractères ASCII correspond à N octets. Une clef est donc une 
+séquence de N octets aléatoires, i.e. 8N bits. On peut effectuer 
+l'opération XOR bit par bit entre le message et la clef. Ceci nous 
+pourvoit d'une opération réversible qui mélange les caractères ASCII 
+pseudo-aléatoirement.
+
+Réversible puisque involutive. Une bijection pseudo-aléatoire puisque 
+la signification du code ASCII n'a aucune ou presque aucune relation 
+avec l'encodage binaire lui-même, logiquement parlant.
+
+Une limitation du chiffre de Vernam en cryptage ASCII est la nécessité 
+d'une clé aussi longue que le texte. Cela représente une quantité de 
+données doublée pour crypter le message.
+
+Une seconde limitation concerne la distribution sécurisée de la clef. 
+Puisqu'il faut une clef unique pour chaque message, il faut être à même 
+de transmettre la clef elle-même de façon sécurisée, sans quoi notre 
+encryptage repose sur du sable. Le problème est donc repoussé plus 
+loin, et il nous faudra un protocole d'échange de clefs sécurisé. Et ce 
+pour chaque message. Avec une clef aussi grande que le message.
